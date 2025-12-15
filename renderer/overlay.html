@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Overlays</title>
+
+    <link rel="styleSheet" type="text/css" href="overlay.css">
+</head>
+<body>
+    <video id="transition" src="" autoplay></video>
+    <video id="ssVideoElement" class="background" src="C:\Users\User\Desktop\Frostbite res\animadedImage01Shake.mp4" autoplay loop muted></video>
+
+    <div id="startingSoon" class="screenContainer">
+        <div id="timer02" style="display: none;">UNSET</div>
+        <div>
+            <h1 id="ss01">UNSET VS UNSET</h1>
+            <h2 id="timer">UNSET</h2>
+            <div id="logoBox">
+                <img id="ss03" class="teamLogo" src="C:\Users\User\Desktop\Frostbite res\teamLogos\testLogo01.webp">
+                <img id="ss02" class="teamLogo" src="C:\Users\User\Desktop\Frostbite res\teamLogos\testLogo02.webp">
+            </div>
+        </div>
+    </div>
+
+    <div id="casters" class="screenContainer" style="display: none;">
+        <div id="commentatorBoxes">
+            <div>
+                <img src="img/1.webp" id="c1Image">
+                <p id="namePlate01"></p>
+            </div>
+            <div id="guestSlot">
+                <img src="img/1.webp" id="gImage">
+                <p id="namePlate03"></p>
+            </div>
+            <div>
+                <img src="img/1.webp" id="c2Image">
+                <p id="namePlate02"></p>
+            </div>
+        </div>
+
+        <div id="adBanner">
+            <img id="addBannerImg" src="banners/banner1.jpg" alt="">
+        </div>
+    </div>
+
+    <div id="banPicks" class="screenContainer" style="display: none; height: 100%;">
+        <div id="mapBox"></div>
+        <div id="mapBanBox">
+        </div>
+        
+        <div id="BanBox">
+            <div id="survBans">
+                <div class="pbBox" id="huntBan0"></div>
+                <div class="pbBox" id="huntBan1"></div>
+            </div>
+            <div id="hunterBans">
+                <div class="pbBox" id="srvBan0"></div>
+                <div class="pbBox" id="srvBan1"></div>
+                <div class="pbBox" id="srvBan2"></div>
+                <div class="pbBox" id="srvBan3"></div>
+            </div>
+        </div>
+
+        <div id="pickBox">
+            <div id="survPickBox">
+                <div class="pbBox" id="survPick0"></div>
+                <div class="pbBox" id="survPick1"></div>
+                <div class="pbBox" id="survPick2"></div>
+                <div class="pbBox" id="survPick3"></div>
+            </div>
+
+            <div class="pbBox" id="hunterPickBox"></div>
+        </div>
+
+        <div id="survGlobanBanBox">
+                <div class="pbBox" id="sgb0"></div>
+                <div class="pbBox" id="sgb1"></div>
+                <div class="pbBox" id="sgb2"></div>
+                <div class="pbBox" id="sgb3"></div>
+
+                <div class="pbBox" id="sgb4"></div>
+                <div class="pbBox" id="sgb5"></div>
+                <div class="pbBox" id="sgb6"></div>
+                <div class="pbBox" id="sgb7"></div>
+
+                <div class="pbBox" id="sgb8"></div>
+                <div class="pbBox" id="sgb9"></div>
+                <div class="pbBox" id="sgb10"></div>
+                <div class="pbBox" id="sgb11"></div>
+            </div>
+
+            <div id="hunterGlobalBanBox">
+                <div class="pbBox" id="hgb0"></div>
+                <div class="pbBox" id="hgb1"></div>
+                <div class="pbBox" id="hgb2"></div>
+            </div>
+        
+    </div>
+
+    <div id="gameplay" class="screenContainer" style="display: none;">
+        <div class="teamCard" id="tc1">
+            <div class="tcHalf1" id="tcStats1">TAGZ <br> W0 &nbsp; D0</div>
+            <div class="tcHalf2" id="tcpoints1">0</div>
+        </div>
+        <div id="roundCard">R1 - First Half</div>
+        <div class="teamCard" id="tc2">
+            <div class="tcHalf2" id="tcpoints2">0</div>
+            <div class="tcHalf1" id="tcStats2">TG <br> W0 &nbsp; D0</div>
+        </div>
+
+    </div>
+
+    
+</body>
+</html>

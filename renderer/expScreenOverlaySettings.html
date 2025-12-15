@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="styleSheet" href="expScreenOverlaySettings.css" type="text/css">
+</head>
+<body>
+    <div>
+        <h1 id="title01" style="margin: 0px;">Duelist</h1>
+        <h2 style="margin: 0px;">Tournament Manager</h2>
+        <br>
+        <hr>
+        <hr style="margin: 0px 20%;">
+    </div>
+
+    <div class="spacer"></div>
+
+    <h1>Screen</h1>
+    <div id="screenChangeContainer">
+        <button id="sc1" class="defaultButton">Strating soon</button>
+        <button id="sc2" class="defaultButton">Commentators</button>
+        <button id="sc3" class="defaultButton">Ban/Pick</button>
+        <button id="sc4" class="defaultButton">Gameplay</button>
+    </div>
+
+    <div class="spacer"></div>
+
+    <h1>Ban/Pick settings</h1>
+    <div id="bpContainer">
+        <h1 id="setRound">Round 1 - first half</h1>
+
+        <div id="startSequence">
+            <h2>Start a b/p phase</h2>
+            <p style="text-align: center;">
+                <input id="bp_teamName1" type="text" placeholder="team1" style="width: 75px;" value="TST"> 
+                VS 
+                <input id="bp_teamName2" type="text" placeholder="team2" style="width: 75px;" value="TWO">
+            </p>
+            <button class="advanceButton">Procede</button>
+        </div>
+
+        <div id="mapBans" class="hidden">
+            <h2>Map bans</h2>
+            <p id="numberOfMapBlocks"></p>
+            <div class="imageBlock">
+                <img class="clickable" data-value="Arms Factory" src="maps/arms.jpg" alt="">
+                <img class="clickable" value="Red Church" src="maps/church.jpg" alt="">
+                <img class="clickable" value="Sacred Heat Hospital" src="maps/hospital.jpg" alt="">
+                <img class="clickable" value="Eversleeping Town" src="maps/eversleeping.jpg" alt="">
+                <img class="clickable" value="Moon River Park" src="maps/moonriver.jpg" alt="">
+                <img class="clickable" value="Lakeside Village" src="maps/lakeside.jpg" alt="">
+                <img class="clickable" value="China Town" src="maps/town.jpg" alt="">
+                <img class="clickable" value="Leos Memory" src="maps/leos.jpg" alt="">
+                <img class="clickable" value="Darkwoods" src="maps/darkwoods.jpg" alt="">
+            </div>
+            <button class="advanceButton">Procede</button>
+        </div>
+
+        <div id="mapPick" class="hidden">
+            <h2>Map PICK</h2>
+            <div class="imageBlock">
+                <img class="clickable" data-value="Arms Factory" src="maps/arms.jpg" alt="">
+                <img class="clickable" value="Red Church" src="maps/church.jpg" alt="">
+                <img class="clickable" value="Sacred Heat Hospital" src="maps/hospital.jpg" alt="">
+                <img class="clickable" value="Eversleeping Town" src="maps/eversleeping.jpg" alt="">
+                <img class="clickable" value="Moon River Park" src="maps/moonriver.jpg" alt="">
+                <img class="clickable" value="Lakeside Village" src="maps/lakeside.jpg" alt="">
+                <img class="clickable" value="China Town" src="maps/town.jpg" alt="">
+                <img class="clickable" value="Leos Memory" src="maps/leos.jpg" alt="">
+                <img class="clickable" value="Darkwoods" src="maps/darkwoods.jpg" alt="">
+            </div>
+            <button class="advanceButton">Procede</button>
+        </div>
+
+        <div id="factionOrder" class="hidden">
+            <h2>Who plays hunter first</h2>
+            <button class="advanceButton" id="bp_facoreder1"></button>
+            <button class="advanceButton" id="bp_facoreder2"></button>
+        </div>
+
+        <div id="characterBP" class="hidden">
+            <input type="text" id="characterLooking"> <button id="addCharacterBans">Add</button>
+            <div id="characterFrameHolder"></div>
+            
+            <p id="selectedCharacters"></p>
+            <br>
+            <br>
+            <button class="advanceButton">Procede</button>
+        </div>
+
+        <div id="results" class="hidden">
+            hunter got what? <input type="number" id="ernedPoints"><br>
+            (as in SURVIVORS not points)
+            <button class="advanceButton">Procede</button>
+        </div>
+
+        <div id="summary" class="hidden">
+            <h2></h2>
+            <p id="breakdown"></p>
+            <button class="advanceButton">Procede</button>
+            <button id="reset" style="background: red;">Reset</button>
+        </div>
+    </div>
+
+    <div class="spacer"></div>
+
+    <h1>Intermission</h1>
+    <div id="intermissionContainer">
+        <p><h3>Team Names</h3> <br> <input type="text" id="teamNameInt1"> vs <input type="text" id="teamNameInt2"></p>
+        <br>
+        <p><h3>Team Logos</h3> <input type="file" id="teamLogoInt1" style="width: 150px;"> vs <input type="file" id="teamLogoInt2" style="width: 150px;"></p>
+        <br>
+        <p><h3>Timer</h3> <input type="number" id="timerInt"></p>
+        <br>
+        <button id="chageIntermission" class="defaultButton">Set All</button>
+    </div>
+
+    <div class="spacer"></div>
+
+    <h1>Commentary</h1>
+    <p>Bot connection: <input type="checkbox" id="botTog"></p>
+    <br>
+    <div>
+        <h3>Commentator 1</h3>
+        <p><input type="text" placeholder="name" id="comname1"></p>
+        <p><input type="text" placeholder="id" id="comid1"></p>
+        <p><input type="file" id="c1Files1"></p>
+        <p><input type="file" id="c1Files2"></p>
+        <br>
+        <h3>Commentator 2</h3>
+        <p><input type="text" placeholder="name" id="comname2"></p>
+        <p><input type="text" placeholder="id" id="comid2"></p>
+        <p><input type="file" id="c2Files1"></p>
+        <p><input type="file" id="c2Files2"></p>
+        <br>
+        <h3>Guest</h3>
+        <p>Show: <input type="checkbox" id="guestTog"></p>
+        <p><input type="text" placeholder="name" id="comname3"></p>
+        <p><input type="text" placeholder="id" id="comid3"></p>
+        <p><input type="file" id="c3Files1"></p>
+        <p><input type="file" id="c3Files2"></p>
+
+        <button id="setCasters">Set</button>
+    </div>
+
+    <div class="spacer"></div>
+
+    <h1>General</h1>
+    <div style="text-align: center;">
+        <button id="build_overlay_window" class="defaultButton">Build overlay</button>
+    </div>
+</body>
+</html>
+
+<!--
+
+-->

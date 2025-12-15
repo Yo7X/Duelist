@@ -1,0 +1,162 @@
+body {
+    color: white;
+    background-color: black;
+    /*background-image: url('vid/eec55f9c4824e8fa8128e06c7b302309.gif');*/
+    background-size: cover;
+    overflow: hidden;
+}
+
+@keyframes backgroundHue {
+    0% {
+        background: rgb(165, 4, 165);
+    } 
+    25% {
+        background: rgb(255, 37, 237);
+    }
+    50% {
+        background: rgb(255, 38, 38);
+    }
+    75% {
+        background: white;
+    }
+    100% {
+        background: rgb(165, 4, 165);
+    }
+}
+
+#backgroundTint {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    margin: 0%;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    opacity: 0.3;
+    background: rgba(60, 2, 137);
+
+    animation: 30s backgroundHue linear infinite;
+}
+
+h1 {
+    font-size: 50px;
+    color: rgba(240, 248, 255, 0);
+    font-weight: bold;
+    background: linear-gradient(90deg, rgb(27, 95, 255), rgb(0, 26, 255));
+    background-clip: text;
+    position: relative;
+    margin-bottom: 0%;
+}
+
+h1::after {
+    content: 'CURRENT';
+    position: absolute;
+    color: rgba(240, 248, 255, 0);
+    text-shadow: 0px 0px 15px rgb(0, 208, 255);
+    left: 0px;
+    text-align: center;
+    width: 100%;
+    z-index: -1;
+}
+
+h5 {
+    margin-top: 0%;
+}
+
+button {
+    width: 220px;
+    height: 75px;
+    margin: 15px;
+    color: white;
+    font-size: 25px;
+    background: linear-gradient(to right, rgb(34, 192, 255, 0.7), rgb(14, 22, 131, 0.7));
+    opacity: 1;
+    backdrop-filter: blur(0.5rem);
+    border: 1px solid white;
+    cursor: pointer;
+
+    transition: width 0.5s ease-in, height 0.5s ease-in;
+}
+
+button:hover {
+    width: 275px;
+    height: 90px;
+    background: linear-gradient(to right, rgb(34, 192, 255, 1), rgb(14, 22, 131, 1));
+
+    transition: width 0.2s ease-out, height 0.2s ease-out;
+}
+
+#pickPage {
+    top: 0px;
+    left: 0px;
+    position: absolute;
+    overflow-y: scroll;
+    height: 100%;
+    width: 100%;
+}
+
+img {
+    border: 1px solid white;
+    border-radius: 5%;
+    margin: 3px;
+    background: linear-gradient(to bottom right, grey, rgb(39, 39, 39));
+    cursor: pointer;
+}
+
+img:hover {
+    background: linear-gradient(to bottom right, rgb(78, 78, 78), rgb(19, 19, 19));
+}
+
+.map {
+    width: 200px;
+    height: 100px;
+}
+
+#pickPage::-webkit-scrollbar {
+    display: none;
+}
+
+#controlStation {
+    position: sticky;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    top: 0px;
+    width: 100%;
+    height:15%;
+    background: black;
+    padding: 6px;
+}
+
+#roundDisplay {
+    flex-basis: 30%;
+    font-size: 30px;
+    user-select: none;
+}
+
+#roundIncrement {
+    flex-basis: 5%;
+    text-align: center;
+    font-size: 30px;
+    color: rgb(0, 205, 0);
+    cursor: pointer;
+    user-select: none;
+}
+
+#roundIncrement:hover {
+    color: rgb(0, 255, 0);
+}
+
+.controlStationButton {
+    margin: 0%;
+    width: 100%;
+    height: 100%;
+    flex-basis: 20%;
+    cursor: pointer;
+}
+
+.controlStationButton:hover {
+    opacity: 1;
+    width: 100%;
+    height: 100%;
+}

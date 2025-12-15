@@ -1,0 +1,111 @@
+body {
+    background: black;
+    color: white;
+    user-select: none;
+}
+
+#title01 {
+    font-size: 60px;
+}
+
+.spacer {
+    margin: 100px 0px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 30px;
+}
+
+h2 {
+    text-align: center;
+    font-size: 25px;
+}
+
+#screenChangeContainer {
+    text-align: center;
+}
+
+.defaultButton{
+    all: unset;
+    border: 1px solid white;
+    cursor: pointer;
+    padding: 10px;
+    margin: 0px 5px;
+    border-radius: 5px;
+    background: rgba(118, 59, 0, 0.6);
+
+    transition: padding 0.2s ease, margin 0.2s ease;
+}
+
+.defaultButton:hover{
+    padding: 12px;
+    margin: 0px 7px;
+    background: rgba(118, 59, 0, 1);
+}
+
+#generalContainer {
+    width: 100%;
+    border: 1px solid white;
+}
+
+#intermissionContainer {
+    text-align: center;
+    width: 100%;
+    border: 1px solid white;
+}
+
+#intermissionContainer h3{
+    margin: 0px;
+}
+
+#bpContainer {
+    width: 100%;
+    border: 1px solid white;
+}
+
+.hidden {
+    display: none;
+}
+
+.imageBlock {
+    border: 1px solid red;
+    padding: 5px;
+    overflow: auto;
+    overflow-y: hidden;
+    flex-wrap: nowrap;
+    display: flex;
+}
+
+.imageBlock img {
+    margin: 10px 5px;
+    height: 100px;
+    width: 150px;
+    cursor: pointer;
+    border: 1px solid white;
+    border-radius: 5%;
+}
+
+#characterFrameHolder img{
+    height: 100px;
+    width: 75px;
+    margin: 0px 10px;
+    outline: 1px solid white;
+}
+
+.cClick {
+    background: green;
+}
+
+.advanceButton {
+    margin: 20px;
+    margin-left: 50%;
+    translate: -50% 0px;
+    height: 50px;
+    width: 200px;
+    border: 1px solid white;
+    font-size: 28px;
+    cursor: pointer;
+    background: rgb(60, 60, 60);
+    color: white;
+}

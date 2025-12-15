@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Screen Overlay Settings</title>
+    <link rel="styleSheet" href="screenOverlaySettings.css" type="text/css">
+</head>
+<body>
+    <h1>General</h1>
+
+    <p>Build overlay window: <button id="build_overlay_window">Open</button></p>
+
+    <p>Change screen <select id="change_screen">
+        <option value="ss">Intermission</option>
+        <option value="casters">Commentary</option>
+        <option value="b/p">Ban/Picks</option>
+        <option value="gameplay">Gameplay</option>
+    </select></p>
+
+    <br><br>
+    <h1>Intermission</h1>
+    <p>Trailers: <input type="checkbox" id="trailerTog"></p>
+    <p>Timer: <input type="number" id="change_timer_value"> <button id="change_timer">Change</button></p>
+    <p>Names: <input type="text" id="change_team_value_1" placeholder="Team01"> VS <input type="text" id="change_team_value_2" placeholder="Team02">  <button id="change_team_values">Change</button></p>
+    <p>Logos: <input type="text" id="change_logo_value_1" placeholder="c:/User/Users/whatever.png"> VS <input type="text" id="change_logo_value_2" placeholder="c:/User/Users/whatever2.png"> <button id="change_logo_values">Change</button></p>
+
+    <br><br>
+    <h1>Commentary</h1>
+    <!--
+    <p class="unfinished">All muted: <input type="checkbox"></p>
+    -->
+    <p>Guest slot: <input type="checkbox" id="guestTog"></p>
+    <P>Names: <input id="caster_name_value_1" type="text" placeholder="Caster01"> + <input id="guest_name_value" type="text" placeholder="Guest01"> + <input id="caster_name_value_2" type="text" placeholder="Caster02"> <button id="change_caster_names">Change</button></P>
+    <P>IDs: <input id="caster_id_value_1" type="text" placeholder="Caster01"> + <input id="guest_id_value" type="text" placeholder="Guest01"> + <input id="caster_id_value_2" type="text" placeholder="Caster02"> <button id="change_caster_ids">Change</button></P>
+
+
+    <P>
+        Caster 1 image: <input id="c1_image1" type="text" placeholder="img/whatever.png"> > <input type="text" id="c1_image2" placeholder="img/whatever.png"> <br>
+        Caster 2 image: <input id="c2_image1" type="text" placeholder="img/whatever.png"> > <input type="text" id="c2_image2" placeholder="img/whatever.png"> <br>
+        Guest image: <input id="g_image1" type="text" placeholder="img/whatever.png"> > <input type="text" id="g_image2" placeholder="img/whatever.png"> <br>
+        <button id="change_caster_images">Change All</button>
+    </P>
+
+    <p class="unfinished">Smart Mouth token: <input type="text" placeholder="token"></p>
+
+    <p class="unfinished">Smart Mouth connects to: <input type="text" placeholder="server id"> & <input type="text" placeholder="channel id"></p>
+
+    <p>Connected: <input type="checkbox" id="botTog"></p>
+
+
+    <br><br>
+    <h1>Ban/Picks</h1>
+    <details id="set1Dis"><summary>Show set 1</summary></details>
+    <details id="set2Dis"><summary>Show set 2</summary></details>
+    <p class="unfinished">Change globals <select name="" id="globalSets"><option value="1">set1</option><option value="2">set2</option></select><button id="resetGlobals">reset</button></p>
+    <p>Round: <b id="roundNumberDisplay">1</b><button id="roundBack">Back</button><button id="roundAdvance">Advance</button> <br> roundStep: <b id="cycleStep">0</b></p>
+    <p>Character <input type="text" id="characterLooking"><button id="addCharcters">Add</button></p>
+    <div id="characterFrameHolder" style="border: 1px solid white;">
+    </div>
+
+    <br><br>
+    <h1>Gameplay</h1>
+    <p class="unfinished">Display point overlay <input type="checkbox"></p>
+    <p>Change round <select id="roundTtitle">
+        <option value="R1 - Fist Half">R1 - Fist Half</option>
+        <option value="R1 - Second Half">R1 - Second Half</option>
+        <option value="R2 - Fist Half">R2 - Fist Half</option>
+        <option value="R2 - Second Half">R2 - Second Half</option>
+        <option value="R3 - Fist Half">R3 - Fist Half</option>
+        <option value="R3 - Second Half">R3 - Second Half</option>
+        <option value="OT - Fist Half">OT - Fist Half</option>
+        <option value="OT - Second Half">OT - Second Half</option>
+    </select><button id="setRoundTtitle">Change</button></p>
+
+    <p>Points <br> Team 1: <input id="team01Points" type="number"><br> Team 2: <input id="team02Points" type="number"> <br><button id="setTeamPoints">change</button></p>
+    <p>Add round <select id="teamWinAwarder"><option value="team1">Team 1</option><option value="team2">Team 2</option><option value="draw">Draw</option></select><button id="changeRoundWins">Change</button><button id="resetRoundWins">Reset</button></p>
+
+    <br><br><br>
+    <p>.</p>
+
+</body>
+</html>

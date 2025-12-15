@@ -1,0 +1,558 @@
+body {
+    margin: 0%;
+    overflow: hidden;
+    background: rgb(0, 128, 0);
+    user-select: none;
+}
+
+.background {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    z-index: -1;
+}
+
+#transition {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    z-index: 5;
+}
+
+h1, h2 {
+    text-align: center;
+    color: white;
+    margin: 10px 0;
+}
+
+h1 {
+    font-size: 5vw;
+}
+
+h2 {
+    font-size: 4vw;
+}
+
+#logoBox {
+    display: flex;
+    justify-content: space-between;
+}
+
+#logoBox img {
+    width: 25vw;
+    margin: 0 20px;
+}
+
+#timer02 {
+    background: linear-gradient(to left, rgb(27, 27, 255), blue, rgb(0, 0, 98));
+    color: white;
+    text-align: center;
+    vertical-align: center;
+    font-size: 50px;
+    border: 2px solid white;
+    position: absolute;
+    left: 0px;
+    height: 60px;
+    width: 170px;
+    top: 0px;
+}
+
+
+.ss01Hidden {
+    animation: ss01Hide 0.5s ease-in forwards;
+}
+
+.ss01Shown {
+    animation: ss01Show 0.5s ease-in forwards;
+}
+
+@keyframes ss01Hide {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        translate: 0% -100%;
+    }
+}
+
+@keyframes ss01Show {
+    0% {
+        opacity: 0;
+        translate: 0% -100%;
+    }
+    100% {
+        opacity: 1;
+        translate: 0% 0%;
+    }
+}
+
+
+.ss04Hidden {
+    animation: ss04Hide 0.5s ease-in forwards;
+}
+
+.ss04Shown {
+    animation: ss04Show 0.5s ease-in forwards;
+}
+
+@keyframes ss04Hide {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        translate: 0% 100%;
+    }
+}
+
+@keyframes ss04Show {
+    0% {
+        opacity: 0;
+        translate: 0% 100%;
+    }
+    100% {
+        opacity: 1;
+        translate: 0% 0%;
+    }
+}
+
+
+.ss02Hidden {
+    animation: ss02Hide 0.5s ease-in forwards;
+}
+
+.ss02Shown {
+    animation: ss02Show 0.5s ease-in forwards;
+}
+
+@keyframes ss02Hide {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        translate: 100% 50%;
+    }
+}
+
+@keyframes ss02Show {
+    0% {
+        opacity: 0;
+        translate: 100% 50%;
+    }
+    100% {
+        opacity: 1;
+        translate: 0% 0%;
+    }
+}
+
+
+.ss03Hidden {
+    animation: ss03Hide 0.5s ease-in forwards;
+}
+
+.ss03Shown {
+    animation: ss03Show 0.5s ease-in forwards;
+}
+
+@keyframes ss03Hide {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        translate: -100% 50%;
+    }
+}
+
+@keyframes ss03Show {
+    0% {
+        opacity: 0;
+        translate: -100% 50%;
+    }
+    100% {
+        opacity: 1;
+        translate: 0% 0%;
+    }
+}
+
+
+
+
+
+#commentatorBoxes {
+    margin-top: 20vh;
+    display: flex;
+    justify-content: center;
+}
+
+#commentatorBoxes div{
+    margin: 0 40px;
+    height: 50vh;
+    width: 20vw;
+    border: 2px solid white;
+    background: rgba(0, 0, 0, 0.7);
+    backdrop-filter: blur(10px);
+}
+
+#commentatorBoxes div img{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0px;
+}
+
+
+#commentatorBoxes div p{
+    width: fit-content;
+    position: absolute;
+    top: 100%;
+    left: 100%;
+    color: white;
+    text-shadow: 0px 0px 10px black;
+    margin: 0;
+    font-size: 60px;
+    translate: -80% -50%;
+}
+
+#adBanner {
+    position: absolute;
+    top: 79vh;
+    height: 20vh;
+    width: 80vw;
+    margin-left: 10vw;
+    border: 1px solid white;
+    translate: 0% 0%;
+}
+
+.adBannerShow {
+    animation: changeBanner 2.5s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+}
+
+@keyframes changeBanner {
+    0% {
+        translate: 0% 0%;
+    }
+    50% {
+        translate: 0% 105%;
+    }
+    100% {
+        translate: 0% 0%;
+    }
+}
+
+#adBanner img{
+    height: 100%;
+}
+
+
+
+#guestSlot {
+    opacity: 0;
+    max-width: 0;
+
+    transition: opacity 1s ease-in-out, max-width 1s ease-in-out;
+}
+
+.guestSlotShown {
+    opacity: 1 !important;
+    max-width: 20vw !important;
+    margin: 0 60px;
+
+    transition: opacity 1s ease-in-out, max-width 1s ease-in-out;
+}
+
+#pickBox {
+    width: 100vw;
+    height: 40vh;
+    margin-top: 59vh;
+    display: flex;
+    justify-content: space-between;
+}
+
+#survPickBox {
+    flex-basis: 50%;
+    display: flex;
+    margin-left: 19px;
+}
+
+#hunterPickBox {
+    flex-basis: 25%;
+    border: 1px solid white;
+    background: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(10px);
+    margin-right: 20px;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    animation: bigRedPulse 5s linear infinite
+}
+
+#survPickBox div{
+    width: 25%;
+    height: 100%;
+    border: 1px solid white;
+    background: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(10px);
+    background-repeat: no-repeat;
+    background-size: 160px;
+
+    animation: bigBluePulse 5s linear infinite
+}
+
+#survGlobanBanBox{
+    position: absolute;
+    top: 10px;
+    left: 0px;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 5px;
+    grid-auto-rows: 60px;
+    margin-right: 50px;
+    margin-left: 10px;
+}
+
+#hunterGlobalBanBox {
+    position: absolute;
+    top: 0px;
+    left: 100%;
+    translate: -210% 10px;
+    display: grid;
+    flex-direction: auto;
+    gap: 5px;
+    grid-auto-rows: 60px;
+    margin-left: 50px;
+    margin-right: 10px;
+}
+
+#survGlobanBanBox div, #hunterGlobalBanBox div{
+    width: 50px;
+    height: 50px;
+    border: 1px solid white;
+
+    background: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(10px);
+
+    
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#survGlobanBanBox div {
+    animation: bluePulse 5s linear infinite
+}
+
+#hunterGlobalBanBox div {
+    animation: redPulse 5s linear infinite
+}
+
+#BanBox {
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    height: fit-content;
+    width: 100%;
+    translate: 0% -105%;
+    padding: 0 18px;
+}
+
+#survBans {
+    display: flex;
+    width: 110px;
+    justify-content: space-between;
+}
+
+#hunterBans {
+    margin-right: 38px;
+    display: flex;
+    width: 235px;
+    justify-content: space-between;
+}
+
+#survBans div, #hunterBans div {
+    height: 50px;
+    width: 50px;
+    border: 1px solid white;
+    background: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(10px);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#survBans div {
+    animation: bluePulse 5s linear infinite
+}
+
+#hunterBans div {
+    animation: redPulse 5s linear infinite
+}
+
+@keyframes redPulse {
+    0% {
+        box-shadow: inset 0px 0px 10px red;
+    }
+    50% {
+        box-shadow: inset 0px 0px 20px rgb(255, 65, 65);
+    }
+    100% {
+        box-shadow: inset 0px 0px 10px red;
+    }
+}
+
+@keyframes bigRedPulse {
+    0% {
+        box-shadow: inset 0px 0px 10px red;
+    }
+    50% {
+        box-shadow: inset 0px 0px 60px rgb(255, 65, 65);
+    }
+    100% {
+        box-shadow: inset 0px 0px 10px red;
+    }
+}
+
+@keyframes bluePulse {
+    0% {
+        box-shadow: inset 0px 0px 10px rgb(36, 11, 255);
+    }
+    50% {
+        box-shadow: inset 0px 0px 20px rgb(60, 128, 255);
+    }
+    100% {
+        box-shadow: inset 0px 0px 10px rgb(36, 11, 255);
+    }
+}
+
+@keyframes bigBluePulse {
+    0% {
+        box-shadow: inset 0px 0px 10px rgb(36, 11, 255);
+    }
+    50% {
+        box-shadow: inset 0px 0px 60px rgb(60, 128, 255);
+    }
+    100% {
+        box-shadow: inset 0px 0px 10px rgb(36, 11, 255);
+    }
+}
+
+#mapBox {
+    animation: mapPulse 5s ease-out infinite;
+    outline: 1px solid white;
+    position: absolute;
+    left: 270px;
+    top: 13px;
+    height: 180px;
+    width: 300px;
+    backdrop-filter: blur(5px);
+    background-color: rgba(0, 0, 0, 0.3);
+    background-size: 400px;
+}
+
+#mapBanBox {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    height: 110px;
+    width: 130px;
+    top: 13px;
+    left: 580px;
+}
+
+#mapBanBox div{
+    animation: mapBanPulse 5s linear infinite;
+    height: 50%;
+    width: 100%;
+    background-size: 150px;
+    border: 1px solid white;
+}
+
+@keyframes mapPulse {
+    0% {
+        box-shadow: inset 0px 0px 10px yellow;
+    }
+    50% {
+        box-shadow: inset 0px 0px 30px gold;
+    }
+    100% {
+        box-shadow: inset 0px 0px 10px yellow;
+    }
+}
+
+@keyframes mapBanPulse {
+    0% {
+        box-shadow: inset 0px 0px 10px rgb(255, 153, 0);
+    }
+    50% {
+        box-shadow: inset 0px 0px 20px rgb(255, 175, 56);
+    }
+    100% {
+        box-shadow: inset 0px 0px 10px rgb(255, 153, 0);
+    }
+}
+
+.teamCard {
+    top: 0px;
+    height: 50px;
+    width: 120px;
+    position: absolute;
+    background: linear-gradient(to bottom right, rgb(1, 154, 154) 10%, rgb(4, 48, 150), rgb(1, 1, 77));
+    border: 2px solid white;
+    display: flex;
+    flex-direction: row;
+    color: white;
+}
+
+.tcHalf1 {
+    flex-basis: 75%;
+    text-align: center;
+    font-size: 20px;
+    vertical-align: center;
+}
+
+.tcHalf2 {
+    flex-basis: 25%;
+    font-size: 45px;
+    text-align: center;
+    vertical-align: center;
+}
+
+#tc1 {
+    left: 0px;
+}
+
+#tc2 {
+    left: 100%;
+    translate: -100% 0%;
+    background: linear-gradient(to bottom left, cyan 10%, rgb(4, 48, 150), rgb(1, 1, 77));
+}
+
+#roundCard {
+    position: absolute;
+    top: 100%;
+    left: 0%;
+    width: 240px;
+    height: 30px;
+    text-align: center;
+    color: white;
+    font-size: 25px;
+    translate: 0% -100%;
+    background: linear-gradient(to bottom, rgb(1, 154, 154) 10%, rgb(4, 48, 150), rgb(1, 1, 77));
+    border: 2px solid white;
+}
+
+/* .fadeIn {
+    color: red;
+    animation: fade 1s linear
+}
+
+@keyframes fade {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 1
+    }
+} */
