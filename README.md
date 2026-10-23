@@ -1,4 +1,6 @@
 # Duelist
-Identity V tournament manager
+Identity V tournament manager build for Frostbite 2025
 
-*If you build off this a credit would be cool but you dont have to 
+Preview - https://www.youtube.com/watch?v=iRSQuz3qM38
+
+How to use - https://www.youtube.com/watch?v=KgcSlb7ui30
