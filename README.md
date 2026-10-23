@@ -1,5 +1,5 @@
 # Duelist
-Identity V tournament manager build for Frostbite 2025
+Identity V tournament manager built for Frostbite 2025
 
 Preview - https://www.youtube.com/watch?v=iRSQuz3qM38
 
